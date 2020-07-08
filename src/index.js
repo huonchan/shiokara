@@ -60,6 +60,8 @@ class Menu extends React.Component {
             onChange={this.inputChange}
           ></input>
         </p>
+        <p><a href="http://localhost:3000/?11oNBLeRmpY">Beyond the moon</a></p>
+
         <p><a href="http://localhost:3000/?wKuHH4kssVg">飢えた太陽</a></p>
         <p><a href="http://localhost:3000/?RSpBRmiBbLI">Hysteric Moon</a></p>
 
