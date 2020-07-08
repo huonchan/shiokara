@@ -65,7 +65,7 @@ class Menu extends React.Component {
 class Youtube extends React.Component {
   render() {
     const opts = {
-      height: '390',
+      height: '50',
       width: '640',
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 1
