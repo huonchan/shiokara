@@ -5,6 +5,11 @@ import App from './App'; //todo:いずれ消えてもらう
 import * as serviceWorker from './serviceWorker';
 import YouTube from 'react-youtube';
 
+let urlParamStr = window.location.search.replace('?',"")//fixme:もっとマトモな処理方法を探せ
+// https://hatolabo.com/programming/react-get-url-param
+var defVideoId = 'XggYNGse84Q'
+var rootUrl='http://localhost:3000/?'
+
 //todo:別ファイルに分けろ。あと選択肢は外部ファイルか何かに定義しろ。
 class Menu extends React.Component {
   
@@ -18,7 +23,7 @@ class Menu extends React.Component {
 
   handleClick = (e,m) => {
     this.setState({
-      title: 'aaaaaaaa'
+      title: 'a'
     })
   }
 
@@ -45,7 +50,7 @@ class Menu extends React.Component {
             onChange={this.inputChange}
           ></input>
         </p>
-        <p>バッハの旋律を夜に聴いたせいです</p>
+        <p><a href="http://localhost:3000/?tZbXHt3xPr8">バッハの旋律を夜に聴いたせいです</a></p>
         <p>G線状のアリア</p>
         <p>ぱわぱふOP</p>
         <p>Powerpuff Raves</p>
@@ -68,14 +73,26 @@ class Youtube extends React.Component {
       height: '50',
       width: '640',
       playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1
+        autoplay: 1, //相手側のサーバーに負荷をかけないよう、開発中は0にする事
+        modestbranding:1,
+        //start:47
+        start:0
       }
     };
+
+    
+    //defVideoId = 'XggYNGse84Q';
+    if( urlParamStr != '' ) 
+    {
+      console.log('urlParamStr:'+urlParamStr);
+      defVideoId = urlParamStr ;
+    }
  
-    return (
+    return ( 
+
       <div id ='movie' class='container_items'>
         <YouTube
-          videoId='DFJgvgmroJs'
+          videoId={defVideoId}
           opts={opts}
           onReady={this._onReady}
         />

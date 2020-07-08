@@ -10,6 +10,8 @@
 3.以下のコマンド
 
 npm install -g create-react-app
+npm i react-youtube
+npm i react-router
 
 4.このプロジェクトの階層までcdで移動
 

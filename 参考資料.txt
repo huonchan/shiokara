@@ -1,0 +1,5 @@
+ReactでYoutubeをテクニカルに扱う
+https://tekitoumemo.hatenablog.com/entry/2018/10/29/225604
+
+URLパラメーターを取得する
+https://hatolabo.com/programming/react-get-url-param
