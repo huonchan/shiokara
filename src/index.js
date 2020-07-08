@@ -71,7 +71,9 @@ class Menu extends React.Component {
 
         <p><a href="http://localhost:3000/?thQWqRDZj7E">G線状のアリア</a></p>
 
-        <p>ぱわぱふOP</p>
+        <p><a href="http://localhost:3000/?TgeHftacU2c">パワーパフガールズOP</a></p>
+        <p><a href="http://localhost:3000/?KSC94cDM85s">WIN, LOSE or DRAW</a></p>
+        <p><a href="http://localhost:3000/?8xkl7AEPblA">Cream Puff Shuffle</a></p>
         <p><a href="http://localhost:3000/?NNBEx72qBRI">Powerpuff Raves</a></p>
 
         <p><a href="http://localhost:3000/?N39glrfql0I">Monster Dance</a></p>
@@ -93,6 +95,8 @@ class Menu extends React.Component {
         
         <p><a href="http://localhost:3000/?RSpBRmiBbLI">コンピューター</a></p>
 
+        <p><a href="http://localhost:3000/?KhTxlm4REQc">Gamble Rumble</a></p>
+        <p><a href="http://localhost:3000/?YaWV6DRs4ys">Blazin'Beat</a></p>
         
         <p><a href="http://localhost:3000/?IRowdGIT3Qk">Get Wild</a></p>
         <p><a href="http://localhost:3000/?UoklxctRrsk">百花繚乱</a></p>
@@ -104,6 +108,8 @@ class Menu extends React.Component {
         <p><a href="http://localhost:3000/?sdVvgdVglOw">バブル</a></p>
         <p><a href="http://localhost:3000/?yaAG8e2h0-k">Machin Gun Kiss</a></p>
         <p><a href="http://localhost:3000/?kLcb_TpUnaA">維持桜2000</a></p>
+        <p><a href="http://localhost:3000/?kCrWRHMWMNc">JUDGEMENT-審判-</a></p>
+        <p><a href="http://localhost:3000/?jry5e4qN26o">24時間シンデレラ</a></p>
 
         <p><a href="http://localhost:3000/?epfPe2U_2Xk">寿司食べたい</a></p>
         <p>
@@ -123,7 +129,7 @@ class Youtube extends React.Component {
       height: '50',
       width: '240',
       playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 0, //相手側のサーバーに負荷をかけないよう、開発中は0にする事
+        autoplay: 1, //相手側のサーバーに負荷をかけないよう、開発中は0にする事
         modestbranding:1,
         //start:47
         start:0
