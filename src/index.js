@@ -13,14 +13,22 @@ class Menu extends React.Component {
     this.state = {
       title: 'Music List'
     }
+    //this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = () => {
-    console.log('this is:', this);
-    this.state.title = 'Change Title'
-
-    this.render()
+  handleClick = (e,m) => {
+    this.setState({
+      title: 'aaaaaaaa'
+    })
   }
+
+  inputChange = (e) =>
+  {
+    this.setState({
+      title: e.target.value
+    })
+  }
+  
 
   render() {
 
@@ -30,25 +38,24 @@ class Menu extends React.Component {
 
       <div id ='Menu' class='container_items'>
         <p>Menu {title}</p>
-        <input
-          type="text"
-          value={title}
-          onChange={ e  => {
-            this.setState({
-              title: e.target.value
-            })
-          }}
-        />
+        <p>
+          <input
+            type="text"
+            value={title}
+            onChange={this.inputChange}
+          ></input>
+        </p>
         <p>バッハの旋律を夜に聴いたせいです</p>
         <p>G線状のアリア</p>
         <p>ぱわぱふOP</p>
         <p>Powerpuff Raves</p>
         <p>ムーンライト</p>
         <p>マイム</p>
-
-        <button onclick={this.handleClick}>
-          イベントボタン
-        </button>
+        <p>
+          <button onClick={this.handleClick} >
+            {this.state.title}
+          </button>
+        </p>
 
       </div>
     )
