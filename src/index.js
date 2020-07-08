@@ -10,6 +10,16 @@ let urlParamStr = window.location.search.replace('?',"")//fixme:もっとマト�
 var defVideoId = '再生しないというより、エラーにして一旦止める'//fixme:クソみたいなhack
 var rootUrl='http://localhost:3000/?'
 
+class ImageChara extends React.Component {
+
+  render(){
+    return (
+      <img src={`${process.env.PUBLIC_URL}/image.png`} width="40%" height="40%"/>
+    );
+  }
+
+}
+
 //todo:別ファイルに分けろ。あと選択肢は外部ファイルか何かに定義しろ。
 class Menu extends React.Component {
   
@@ -76,7 +86,7 @@ class Youtube extends React.Component {
   render() {
     const opts = {
       height: '50',
-      width: '640',
+      width: '240',
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 1, //相手側のサーバーに負荷をかけないよう、開発中は0にする事
         modestbranding:1,
@@ -115,9 +125,10 @@ class Youtube extends React.Component {
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      <h1>💀<a href="http://localhost:3000/">PARANOIA PLAYER</a>💀</h1>
+      <h1>☀<a href="http://localhost:3000/">SunFlower Player</a>☽</h1> このエディタは主にオフィスで誤解を受ける事なく、Youtubeの「音声」だけを楽しむために特化したSPAのプレイヤーです
     </div>
     <div id='content_root' class ='container'>
+      <ImageChara />
       <Menu />
       <Youtube />
     </div>
