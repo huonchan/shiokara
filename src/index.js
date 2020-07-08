@@ -105,6 +105,7 @@ class Menu extends React.Component {
         <p><a href="http://localhost:3000/?m1zUwyU711E">ハイド・アンドシーク</a></p>
         <p><a href="http://localhost:3000/?IDzrNFafwmM">青春アミーゴ</a></p>
 
+        <p><a href="http://localhost:3000/?thWPHmbmlKc">ワカレノウタ</a></p>
         
         <p><a href="http://localhost:3000/?gmLrJTpOx4A">一番歌</a></p>
         <p><a href="http://localhost:3000/?sdVvgdVglOw">バブル</a></p>
