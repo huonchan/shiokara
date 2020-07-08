@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color:crimson;
 }
 
 code {
@@ -22,4 +24,5 @@ code {
 .container
 {
   font-size: 0;
+  margin: 20px 20px 20px 20px ;
 }

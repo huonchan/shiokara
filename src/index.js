@@ -7,7 +7,7 @@ import YouTube from 'react-youtube';
 
 let urlParamStr = window.location.search.replace('?',"")//fixme:もっとマトモな処理方法を探せ
 // https://hatolabo.com/programming/react-get-url-param
-var defVideoId = 'XggYNGse84Q'
+var defVideoId = '再生しないというより、エラーにして一旦止める'//fixme:クソみたいなhack
 var rootUrl='http://localhost:3000/?'
 
 //todo:別ファイルに分けろ。あと選択肢は外部ファイルか何かに定義しろ。
@@ -42,7 +42,7 @@ class Menu extends React.Component {
     return (
 
       <div id ='Menu' class='container_items'>
-        <p>Menu {title}</p>
+        <p><h2>【{title}】</h2></p>
         <p>
           <input
             type="text"
@@ -51,11 +51,16 @@ class Menu extends React.Component {
           ></input>
         </p>
         <p><a href="http://localhost:3000/?tZbXHt3xPr8">バッハの旋律を夜に聴いたせいです</a></p>
-        <p>G線状のアリア</p>
+        <p><a href="http://localhost:3000/?vS6wzjpCvec">アルクアラウンド</a></p>
+        <p><a href="http://localhost:3000/?_aqs6HrGroM">スローモーション</a></p>
+        <p><a href="http://localhost:3000/?thQWqRDZj7E">G線状のアリア</a></p>
         <p>ぱわぱふOP</p>
-        <p>Powerpuff Raves</p>
+        <p><a href="http://localhost:3000/?NNBEx72qBRI">Powerpuff Raves</a></p>
+        <p><a href="http://localhost:3000/?N39glrfql0I">Monster Dance</a></p>
+        <p><a href="http://localhost:3000/?5oELB7zwc8Q">Hello Fixer</a></p>
         <p>ムーンライト</p>
         <p>マイム</p>
+        <p><a href="http://localhost:3000/?epfPe2U_2Xk">寿司食べたい</a></p>
         <p>
           <button onClick={this.handleClick} >
             {this.state.title}
@@ -102,13 +107,16 @@ class Youtube extends React.Component {
  
   _onReady(event) {
     // access to player in all event handlers via event.target
-    event.target.pauseVideo();
+    //event.target.pauseVideo(); #
   }
 }
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <div>
+      <h1>💀<a href="http://localhost:3000/">PARANOIA PLAYER</a>💀</h1>
+    </div>
     <div id='content_root' class ='container'>
       <Menu />
       <Youtube />
