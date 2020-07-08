@@ -60,16 +60,51 @@ class Menu extends React.Component {
             onChange={this.inputChange}
           ></input>
         </p>
+        <p><a href="http://localhost:3000/?wKuHH4kssVg">飢えた太陽</a></p>
+        <p><a href="http://localhost:3000/?RSpBRmiBbLI">Hysteric Moon</a></p>
+
+        <p><a href="http://localhost:3000/?RSpBRmiBbLI">恋唄</a></p>
+
         <p><a href="http://localhost:3000/?tZbXHt3xPr8">バッハの旋律を夜に聴いたせいです</a></p>
         <p><a href="http://localhost:3000/?vS6wzjpCvec">アルクアラウンド</a></p>
         <p><a href="http://localhost:3000/?_aqs6HrGroM">スローモーション</a></p>
+
         <p><a href="http://localhost:3000/?thQWqRDZj7E">G線状のアリア</a></p>
+
         <p>ぱわぱふOP</p>
         <p><a href="http://localhost:3000/?NNBEx72qBRI">Powerpuff Raves</a></p>
+
         <p><a href="http://localhost:3000/?N39glrfql0I">Monster Dance</a></p>
+
         <p><a href="http://localhost:3000/?5oELB7zwc8Q">Hello Fixer</a></p>
-        <p>ムーンライト</p>
-        <p>マイム</p>
+        
+        <p><a href="http://localhost:3000/?EyHPGzNRgAE">Hollow</a></p>
+        <p><a href="http://localhost:3000/?y1-nHSPdYM4">Devils Parade</a></p>
+
+        <p><a href="http://localhost:3000/?y1-nHSPdYM4">Ghost</a></p>
+        <p><a href="http://localhost:3000/?nn2Ie2APZsU">ムーンライト―...</a></p>
+        <p><a href="http://localhost:3000/?XggYNGse84Q">マイム</a></p>
+        <p><a href="http://localhost:3000/?ipT92Ig53gE">サナトリウム</a></p>
+
+        <p><a href="http://localhost:3000/?82QiT98_X4s">NOnsenSe MARkeT</a></p>
+        <p><a href="http://localhost:3000/?qzvrDLzsCqk">千代田線デモクラシー</a></p>
+        <p><a href="http://localhost:3000/?uvCd9wHNiNA">Happy life</a></p>
+        <p><a href="http://localhost:3000/?cAWmBp94tDU">エムオロギー</a></p>
+        
+        <p><a href="http://localhost:3000/?RSpBRmiBbLI">コンピューター</a></p>
+
+        
+        <p><a href="http://localhost:3000/?IRowdGIT3Qk">Get Wild</a></p>
+        <p><a href="http://localhost:3000/?UoklxctRrsk">百花繚乱</a></p>
+        <p><a href="http://localhost:3000/?m1zUwyU711E">ハイド・アンドシーク</a></p>
+        <p><a href="http://localhost:3000/?IDzrNFafwmM">青春アミーゴ</a></p>
+
+        
+        <p><a href="http://localhost:3000/?gmLrJTpOx4A">一番歌</a></p>
+        <p><a href="http://localhost:3000/?sdVvgdVglOw">バブル</a></p>
+        <p><a href="http://localhost:3000/?yaAG8e2h0-k">Machin Gun Kiss</a></p>
+        <p><a href="http://localhost:3000/?kLcb_TpUnaA">維持桜2000</a></p>
+
         <p><a href="http://localhost:3000/?epfPe2U_2Xk">寿司食べたい</a></p>
         <p>
           <button onClick={this.handleClick} >
@@ -88,7 +123,7 @@ class Youtube extends React.Component {
       height: '50',
       width: '240',
       playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1, //相手側のサーバーに負荷をかけないよう、開発中は0にする事
+        autoplay: 0, //相手側のサーバーに負荷をかけないよう、開発中は0にする事
         modestbranding:1,
         //start:47
         start:0
@@ -125,7 +160,8 @@ class Youtube extends React.Component {
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      <h1>☀<a href="http://localhost:3000/">SunFlower Player</a>☽</h1> このエディタは主にオフィスで誤解を受ける事なく、Youtubeの「音声」だけを楽しむために特化したSPAのプレイヤーです
+      <h1>☀<a href="http://localhost:3000/">SunFlower Player</a>☽</h1>
+      このエディタは主にオフィスで誤解を受ける事なく、Youtubeの「音声」だけを楽しむために特化したSPAのプレイヤーです
     </div>
     <div id='content_root' class ='container'>
       <ImageChara />
