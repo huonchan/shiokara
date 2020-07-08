@@ -112,6 +112,14 @@ class Menu extends React.Component {
         <p><a href="http://localhost:3000/?jry5e4qN26o">24時間シンデレラ</a></p>
 
         <p><a href="http://localhost:3000/?epfPe2U_2Xk">寿司食べたい</a></p>
+
+        
+        <p><a href="http://localhost:3000/?ebiRGvS7ViQ">光と闇の童話</a></p>
+        <p><a href="http://localhost:3000/?A2vfro-7puc">詩人バラッドの悲劇</a></p>
+        <p><a href="http://localhost:3000/?jBJ6Yj-WMD0">死せる者達の物語</a></p>
+
+        <p><a href="http://localhost:3000/?RrZ_K88DEWE">Blind Justice ～それぞれの正義～</a></p>
+
         <p>
           <button onClick={this.handleClick} >
             {this.state.title}
