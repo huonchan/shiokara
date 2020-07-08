@@ -1,31 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App'; //todo:いずれ消えてもらう
 import * as serviceWorker from './serviceWorker';
 import YouTube from 'react-youtube';
 
-
+//todo:別ファイルに分けろ。あと選択肢は外部ファイルか何かに定義しろ。
 class Menu extends React.Component {
   render() {
     return (
-      <div id ='Menu>'>
+      <div id ='Menu' class='container_items'>
         <p>Menu Component</p>
+        <p>バッハの旋律を夜に聴いたせいです</p>
+        <p>G線状のアリア</p>
+        <p>ぱわぱふOP</p>
+        <p>Powerpuff Raves</p>
+        <p>ムーンライト</p>
+        <p>マイム</p>
+
       </div>
     )
   }
 }
-
-class Movie extends React.Component {
-  render() {
-    return (
-      <div>
-        <p>Movie Component</p>
-      </div>
-    )
-  }
-}
-
 
 class Youtube extends React.Component {
   render() {
@@ -38,11 +34,13 @@ class Youtube extends React.Component {
     };
  
     return (
-      <YouTube
-        videoId="KSC94cDM85s"
-        opts={opts}
-        onReady={this._onReady}
-      />
+      <div id ='movie' class='container_items'>
+        <YouTube
+          videoId='KSC94cDM85s'
+          opts={opts}
+          onReady={this._onReady}
+        />
+      </div>
     );
   }
  
@@ -52,16 +50,13 @@ class Youtube extends React.Component {
   }
 }
 
-class Content extends React.Component {
-
-}
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <Menu />
-    <Movie />
-    <Youtube />
+    <div id='content_root' class ='container'>
+      <Menu />
+      <Youtube />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
