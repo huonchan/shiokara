@@ -14,7 +14,7 @@ class ImageChara extends React.Component {
 
   render(){
     return (
-      <img src={`${process.env.PUBLIC_URL}/image.png`} width="40%" height="40%"/>
+      <img src={`${process.env.PUBLIC_URL}/image.png`} width="10%" height="10%"/>
     );
   }
 
@@ -99,11 +99,16 @@ class Menu extends React.Component {
 
         <p><a href="http://localhost:3000/?KhTxlm4REQc">Gamble Rumble</a></p>
         <p><a href="http://localhost:3000/?YaWV6DRs4ys">Blazin'Beat</a></p>
-        
+
+        <p><a href="http://localhost:3000/?5CjA4W6BJeU">命ばっかり</a></p>
+        <p><a href="http://localhost:3000/?CoGVCO99ubM">祈りは空っぽ</a></p>
+        <p><a href="http://localhost:3000/?OGpPSn2fsUA">命に嫌われている</a></p>
+
         <p><a href="http://localhost:3000/?IRowdGIT3Qk">Get Wild</a></p>
         <p><a href="http://localhost:3000/?UoklxctRrsk">百花繚乱</a></p>
         <p><a href="http://localhost:3000/?m1zUwyU711E">ハイド・アンドシーク</a></p>
         <p><a href="http://localhost:3000/?IDzrNFafwmM">青春アミーゴ</a></p>
+        <p><a href="http://localhost:3000/?kZHvRJV0Vfk">サウダージ</a></p>
 
         <p><a href="http://localhost:3000/?thWPHmbmlKc">ワカレノウタ</a></p>
         
